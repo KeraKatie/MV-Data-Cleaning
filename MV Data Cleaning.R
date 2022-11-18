@@ -6,7 +6,9 @@ library(janitor)
 
 MV_onsite_data_text <- read_csv("data-raw/MV_Onsite_Data_Text.csv") %>%
 clean_names()
-  
+ 
+
+# Tidy Data ---------------------------------------------------------------
 
 sites_visited <- MV_onsite_data_text %>%
   filter(study_group == "Treatment (exit)") %>%
